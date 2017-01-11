@@ -1,3 +1,1 @@
-# tinker-dex-dump
-
-##tinker-dex-dump使用方法
+#tinker-dex-dump使用方法
