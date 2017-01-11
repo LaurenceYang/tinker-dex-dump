@@ -16,7 +16,7 @@ tinker-dex-dump是一个用来dump dex（指Tinker通过dexdiff算法生成的de
 ```
 java -jar tinker-dex-dump.jar --dex classes.dex --header
 ```
-![显示头部信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/comand_show_header.png)
+![显示头部信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_header.png)
 
 **显示section信息**
 ```
