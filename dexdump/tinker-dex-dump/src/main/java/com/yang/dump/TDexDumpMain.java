@@ -206,7 +206,7 @@ public class TDexDumpMain {
                         System.err.println(tinkerDexFile.getAbsolutePath() + " does not exist");
                         goToError();
                     }
-                    System.out.println("special dex file path:" + tinkerDexFile.getAbsolutePath());
+//                    System.out.println("special dex file path:" + tinkerDexFile.getAbsolutePath());
                 } else if (arg.equals(ARG_HEADER)) {
                     isShowHeader = true;
                 } else if (arg.equals(ARG_SECTION)) {
