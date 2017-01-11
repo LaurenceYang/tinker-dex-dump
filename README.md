@@ -35,4 +35,6 @@ java -jar tinker-dex-dump.jar --help
 ##参考  
 [Tinker](https://github.com/Tencent/tinker)  
 
-[热更新相关文档](https://github.com/LaurenceYang/article)
+[热更新相关文档](https://github.com/LaurenceYang/article)  
+
+[More...>>>](http://www.cnblogs.com/yyangblog/)
