@@ -67,12 +67,15 @@ java -jar tinker-dex-dump.jar --help
 ##TODO  
   
 1、复杂区域如ClassData等的表现形式  
+
 也欢迎大家多多提出意见  
 
 
 
 ##参考  
-[Tinker](https://github.com/Tencent/tinker)  
+[Tinker官方Github](https://github.com/Tencent/tinker)  
+
+[Tinker官方Wiki](https://github.com/Tencent/tinker/wiki)  
 
 [热更新相关文档](https://github.com/LaurenceYang/article)  
 
