@@ -6,7 +6,7 @@
 
 ##关于tinker-dex-dump  
   
-tinker-dex-dump是针对dexdiff生成的dex格式的文件，查看其内部数据的工具。主要目的是帮助大家对dexdiff生成的dex格式有一个更加直观的了解。如果使用该工具能让你更容易了解tinker的流程和tinker深层次的机制，那工具的目的也就达到了。  
+tinker-dex-dump是针对dexdiff生成的dex格式的文件，查看其内部数据的工具。主要目的是帮助大家对dexdiff生成的dex格式有一个更加直观的了解。如果使用该工具能让你更容易了解tinker的流程和tinker深层次的机制，那工具的目的也就达到了，也算是个人对Tinker的致敬。  
 
   
   
@@ -20,29 +20,30 @@ tinker-dex-dump是针对dexdiff生成的dex格式的文件，查看其内部数�
  ```
  java -jar tinker-dex-dump.jar --dex *.dex [--header] [--section section-name]
  ```
- --dex          必选项，后接要dump的dex路径  
+ --dex            必选项，后接要dump的dex路径  
  
  --header       可选项  
  
  --section      可选项，后接要显示的section名字  
  
  
- --section参数列表
-*StringData
-*TypeId
-*ProtoId
-*FieldId
-*MethodId
-*ClassDef
-*TypeList
-*AnnotationSetRefList
-*AnnotationSet
-*ClassData
-*Code
-*DebugInfo
-*Annotation
-*StaticValue
-*AnnotationsDirectory
+####--section参数列表
+ 
+> * StringData
+> * TypeId
+> * ProtoId
+> * FieldId
+> * MethodId
+> * ClassDef
+> * TypeList
+> * AnnotationSetRefList
+> * AnnotationSet
+> * ClassData
+> * Code
+> * DebugInfo
+> * Annotation
+> * StaticValue
+> * AnnotationsDirectory
  
 ###范例：显示头部信息  
 ```
