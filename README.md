@@ -23,7 +23,7 @@ tinker-dex-dump是针对dexdiff生成的.dex格式文件，查看其内部数据
  ```
  --dex            必选项，后接需要dump的dex路径  
  
- --header       可选项，显示dex文件中header信息
+ --header      可选项，显示header区域信息
  
  --section      可选项，显示section区域信息，后接要显示的section名字  
  
@@ -64,9 +64,11 @@ java -jar tinker-dex-dump.jar --help
 ```
 ![显示帮助信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_help.png)
   
- 
+##TODO  
+  
+复杂区域如ClassData等的表现形式  
 
-##参考  
+##参考  
 [Tinker](https://github.com/Tencent/tinker)  
 
 [热更新相关文档](https://github.com/LaurenceYang/article)  
