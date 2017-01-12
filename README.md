@@ -15,20 +15,48 @@ tinker-dex-dump是针对dexdiff生成的dex格式的文件，查看其内部数�
 [下载地址](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/lib/tinker-dex-dump.jar)
   
 2、通过命令行方式执行  
-
-**显示头部信息**
+###命令格式
+  
+ ```
+ java -jar tinker-dex-dump.jar --dex *.dex [--header] [--section section-name]
+ ```
+ --dex          必选项，后接要dump的dex路径  
+ 
+ --header       可选项  
+ 
+ --section      可选项，后接要显示的section名字  
+ 
+ 
+ --section参数列表
+*StringData
+*TypeId
+*ProtoId
+*FieldId
+*MethodId
+*ClassDef
+*TypeList
+*AnnotationSetRefList
+*AnnotationSet
+*ClassData
+*Code
+*DebugInfo
+*Annotation
+*StaticValue
+*AnnotationsDirectory
+ 
+###范例：显示头部信息  
 ```
 java -jar tinker-dex-dump.jar --dex classes.dex --header
 ```
 ![显示头部信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_header.png)
 
-**显示section信息**
+###范例：显示section信息  
 ```
 java -jar tinker-dex-dump.jar --dex classes.dex --section StringData
 ```
 ![显示section信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_section.png)
 
-**显示帮助信息**
+###范例：显示帮助信息  
 ```
 java -jar tinker-dex-dump.jar --help
 ```
