@@ -46,19 +46,19 @@ tinker-dex-dump是针对dexdiff生成的.dex格式文件，查看其内部数据
 > * StaticValue
 > * AnnotationsDirectory
  
-###范例：显示头部信息  
+###范例一：显示头部信息  
 ```
 java -jar tinker-dex-dump.jar --dex classes.dex --header
 ```
 ![显示头部信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_header.png)
 
-###范例：显示StringData区域信息   
+###范例二：显示StringData区域信息   
 ```
 java -jar tinker-dex-dump.jar --dex classes.dex --section StringData
 ```
 ![显示section信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_section.png)
 
-###范例：显示帮助信息  
+###范例三：显示帮助信息  
 ```
 java -jar tinker-dex-dump.jar --help
 ```
@@ -66,7 +66,10 @@ java -jar tinker-dex-dump.jar --help
   
 ##TODO  
   
-复杂区域如ClassData等的表现形式  
+1、复杂区域如ClassData等的表现形式  
+也欢迎大家多多提出意见  
+
+
 
 ##参考  
 [Tinker](https://github.com/Tencent/tinker)  
