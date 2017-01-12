@@ -64,6 +64,12 @@ java -jar tinker-dex-dump.jar --help
 ```
 ![显示帮助信息](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/command_show_help.png)
   
+##tinker dex格式参考  
+tinker dex格式主要包括两大部分：头部和各个section区域的操作列表，如下图：
+![tinker dex format](https://github.com/LaurenceYang/tinker-dex-dump/blob/master/asserts/dex%20format.png)  
+  
+更多关于tinker dex格式可以参考Tinker项目的[DexPatchGenerator](https://github.com/Tencent/tinker/blob/master/tinker-build/tinker-patch-lib/src/main/java/com/tencent/tinker/build/dexpatcher/DexPatchGenerator.java)文件  
+
 ##TODO  
   
 1、复杂区域如ClassData等的表现形式  
