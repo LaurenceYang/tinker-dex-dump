@@ -4,6 +4,8 @@ import com.tencent.tinker.android.dex.io.DexDataBuffer;
 import com.yang.dump.struct.PatchOperation;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -73,6 +75,7 @@ public abstract class DexSectionDumpAlgorithm<T extends Comparable<T>> {
 				print("[operation]\t|\t[index in section]\t|\t[item]");
 			}
 
+			Collections.sort(patchOperationList, new CompareIndex());
 			PatchOperation<T> operation = patchOperationList.get(i);
 
 			T item = operation.newItem;
@@ -109,5 +112,16 @@ public abstract class DexSectionDumpAlgorithm<T extends Comparable<T>> {
 		stringBuilder.append(hexString);
 
 		return stringBuilder.toString();
+	}
+
+	private class CompareIndex implements Comparator<PatchOperation<T>> {
+
+		@Override
+		public int compare(PatchOperation<T> o1, PatchOperation<T> o2) {
+			int index1 = o1.index;
+			int index2 = o2.index;
+
+			return index1 - index2;
+		}
 	}
 }
